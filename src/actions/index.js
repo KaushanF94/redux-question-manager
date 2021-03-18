@@ -1,9 +1,9 @@
-import { ADD_ARTICLE } from "../constants/action-types";
+import { ADD_QUESTIONS } from "../constants/action-types";
 
 export function addArticle(payload) {
-  return { type: ADD_ARTICLE, payload };
+  return { type: ADD_QUESTIONS, payload };
 }
 
-export function getData() {
+export function getQuestionData() {
   return { type: "DATA_REQUESTED" };
 }

@@ -1,19 +1,19 @@
-import { ADD_ARTICLE } from "../constants/action-types";
+import { ADD_QUESTIONS } from "../constants/action-types";
 
 const initialState = {
-  articles: [],
-  remoteArticles: []
+  addedQuestions: [],
+  questionData: []
 };
 
 function rootReducer(state = initialState, action) {
-  if (action.type === ADD_ARTICLE) {
+  if (action.type === ADD_QUESTIONS) {
     return Object.assign({}, state, {
-      articles: state.articles.concat(action.payload)
+      addedQuestions: state.addedQuestions.concat(action.payload)
     });
   }
   if (action.type === "DATA_LOADED") {
     return Object.assign({}, state, {
-      remoteArticles: state.remoteArticles.concat(action.payload)
+      questionData: state.questionData.concat(action.payload)
     });
   }
   return state;

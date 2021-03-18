@@ -1,22 +1,12 @@
 import React from "react";
-import List from "./List.js";
-import Form from "./Form.js";
-import Post from "./Posts.js";
+import DataTableManage from "./QuestionaireDataTabel/DataTableManage.js";
 
 const App = () => (
   <div>
     <div>
-      <h2>Articles</h2>
-      <List />
+      <h2>Project: Question manager</h2>
+      <DataTableManage />
     </div>
-    {/* <div>
-      <h2>Add a new article</h2>
-      <Form />
-    </div> */}
-    {/* <div>
-      <h2>API posts</h2>
-      <Post />
-    </div> */}
   </div>
 );
 
